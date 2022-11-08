@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1); // строгая типизация
+declare(strict_types=1); // строгая типизация тайп-хинтинг (type hinting) в PHP 7
 
 function getSum(int $x, int $y)
 {
