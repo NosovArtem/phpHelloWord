@@ -1,12 +1,17 @@
 <?php
-declare(strict_types=1); // строгая типизация тайп-хинтинг (type hinting) в PHP 7
 
-function getSum(int $x, int $y)
-{
-    var_dump($x);
-    var_dump($y);
+require __DIR__ . '/function.php';
 
-    return $x + $y;
-}
-
-echo getSum(12.5, 10);
+?>
+<html>
+<head>
+    <title>Чётные и нечётные числа</title>
+</head>
+<body>
+Число 2 <?= isEven(2) ? 'чётное' : 'нечётное' ?>
+<br>
+Число 5 <?= isEven(5) ? 'чётное' : 'нечётное' ?>
+<br>
+Число 8 <?= isEven(8) ? 'чётное' : 'нечётное' ?>
+</body>
+</html>
