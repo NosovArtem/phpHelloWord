@@ -1,17 +1,8 @@
 <?php
 
-require __DIR__ . '/function.php';
+$content = '<h1>Заголовок статьи</h1><p>Текст какой-то статьи</p>';
 
-?>
-<html>
-<head>
-    <title>Чётные и нечётные числа</title>
-</head>
-<body>
-Число 2 <?= isEven(2) ? 'чётное' : 'нечётное' ?>
-<br>
-Число 5 <?= isEven(5) ? 'чётное' : 'нечётное' ?>
-<br>
-Число 8 <?= isEven(8) ? 'чётное' : 'нечётное' ?>
-</body>
-</html>
+require __DIR__ . '/header.php';
+require __DIR__ . '/sidebar.php';
+require __DIR__ . '/content.php';
+require __DIR__ . '/footer.php';
