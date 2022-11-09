@@ -1,8 +1,18 @@
-<?php
-
-$content = '<h1>Заголовок статьи</h1><p>Текст какой-то статьи</p>';
-
-require __DIR__ . '/header.php';
-require __DIR__ . '/sidebar.php';
-require __DIR__ . '/content.php';
-require __DIR__ . '/footer.php';
+<html>
+<head>
+    <title>Форма входа</title>
+</head>
+<body>
+<form action="/login.php" method="get">
+    <label>
+        Логин <input type="text" name="login">
+    </label>
+    <br>
+    <label>
+        Пароль <input type="password" name="password">
+    </label>
+    <br>
+    <input type="submit" value="Войти">
+</form>
+</body>
+</html>
